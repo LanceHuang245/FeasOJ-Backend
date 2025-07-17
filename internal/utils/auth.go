@@ -1,9 +1,9 @@
 package utils
 
 import (
+	"FeasOJ/internal/config"
 	"fmt"
 	"regexp"
-	"src/internal/config"
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"

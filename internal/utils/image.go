@@ -1,6 +1,8 @@
 package utils
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/global"
 	"bytes"
 	"encoding/json"
 	"errors"
@@ -12,8 +14,6 @@ import (
 	"mime/multipart"
 	"net/http"
 	"os"
-	"src/internal/config"
-	"src/internal/global"
 
 	"github.com/hashicorp/consul/api"
 	"github.com/nfnt/resize"

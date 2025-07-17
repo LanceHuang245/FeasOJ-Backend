@@ -1,10 +1,10 @@
 package utils
 
 import (
+	"FeasOJ/internal/config"
 	"crypto/tls"
 	"fmt"
 	"math/rand"
-	"src/internal/config"
 	"time"
 
 	"gopkg.in/gomail.v2"

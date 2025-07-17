@@ -1,11 +1,11 @@
 package middlewares
 
 import (
+	gincontext "FeasOJ/internal/gin"
+	"FeasOJ/internal/utils"
+	"FeasOJ/internal/utils/sql"
 	"net/http"
 	"net/url"
-	gincontext "src/internal/gin"
-	"src/internal/utils"
-	"src/internal/utils/sql"
 
 	"github.com/gin-gonic/gin"
 )

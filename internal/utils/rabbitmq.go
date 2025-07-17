@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"src/internal/config"
+	"FeasOJ/internal/config"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 )

@@ -1,9 +1,10 @@
 package middlewares
 
 import (
-	"gorm.io/gorm/clause"
-	"src/internal/global"
+	"FeasOJ/internal/global"
 	"time"
+
+	"gorm.io/gorm/clause"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"

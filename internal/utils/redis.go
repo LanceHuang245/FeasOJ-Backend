@@ -1,9 +1,9 @@
 package utils
 
 import (
+	"FeasOJ/internal/config"
 	"encoding/json"
 	"errors"
-	"src/internal/config"
 	"time"
 
 	"github.com/go-redis/redis"

@@ -1,16 +1,16 @@
 package gincontext
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/global"
+	"FeasOJ/internal/utils"
+	"FeasOJ/internal/utils/sql"
 	"fmt"
 	"net/http"
 	"net/url"
 	"os"
 	"path"
 	"path/filepath"
-	"src/internal/config"
-	"src/internal/global"
-	"src/internal/utils"
-	"src/internal/utils/sql"
 	"time"
 
 	"github.com/go-redis/redis"

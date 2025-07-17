@@ -1,13 +1,13 @@
 package utils
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/global"
 	"bytes"
 	"encoding/json"
 	"io"
 	"log"
 	"net/http"
-	"src/internal/config"
-	"src/internal/global"
 
 	"fmt"
 

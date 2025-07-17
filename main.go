@@ -1,19 +1,19 @@
 package main
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/global"
+	"FeasOJ/internal/judge"
+	"FeasOJ/internal/router"
+	"FeasOJ/internal/utils"
+	"FeasOJ/internal/utils/scheduler"
+	"FeasOJ/internal/utils/sql"
 	"bufio"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"path/filepath"
-	"src/internal/config"
-	"src/internal/global"
-	"src/internal/judge"
-	"src/internal/router"
-	"src/internal/utils"
-	"src/internal/utils/scheduler"
-	"src/internal/utils/sql"
 
 	"syscall"
 

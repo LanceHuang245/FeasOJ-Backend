@@ -1,11 +1,11 @@
 package utils
 
 import (
+	"FeasOJ/internal/global"
 	"io"
 	"log"
 	"os"
 	"path/filepath"
-	"src/internal/global"
 	"time"
 )
 

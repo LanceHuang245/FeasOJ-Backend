@@ -1,9 +1,9 @@
 package gincontext
 
 import (
+	"FeasOJ/internal/global"
+	"FeasOJ/internal/utils/sql"
 	"net/http"
-	"src/internal/global"
-	"src/internal/utils/sql"
 	"strconv"
 
 	"gorm.io/gorm"

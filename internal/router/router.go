@@ -1,8 +1,8 @@
 package router
 
 import (
-	gincontext "src/internal/gin"
-	"src/internal/middlewares"
+	gincontext "FeasOJ/internal/gin"
+	"FeasOJ/internal/middlewares"
 
 	"github.com/gin-gonic/gin"
 )

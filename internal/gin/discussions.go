@@ -1,12 +1,12 @@
 package gincontext
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/utils"
+	"FeasOJ/internal/utils/sql"
 	"fmt"
 	"net/http"
 	"net/url"
-	"src/internal/config"
-	"src/internal/utils"
-	"src/internal/utils/sql"
 	"strconv"
 	"time"
 

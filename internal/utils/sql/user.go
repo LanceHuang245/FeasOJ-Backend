@@ -1,7 +1,7 @@
 package sql
 
 import (
-	"src/internal/global"
+	"FeasOJ/internal/global"
 	"time"
 
 	"github.com/google/uuid"

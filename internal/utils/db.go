@@ -1,10 +1,10 @@
 package utils
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/global"
 	"fmt"
 	"log"
-	"src/internal/config"
-	"src/internal/global"
 	"time"
 
 	"github.com/google/uuid"
@@ -41,10 +41,7 @@ func InitTable() bool {
 		&global.UserCompetitions{},
 		&global.IPVisit{},
 	)
-	if err != nil {
-		return false
-	}
-	return true
+	return err == nil
 }
 
 // 返回数据库连接对象

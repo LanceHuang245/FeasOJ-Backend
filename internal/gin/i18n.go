@@ -1,10 +1,11 @@
 package gincontext
 
 import (
+	"FeasOJ/internal/utils"
+
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"golang.org/x/text/language"
-	"src/internal/utils"
 )
 
 func GetLangFromHeader(c *gin.Context) language.Tag {

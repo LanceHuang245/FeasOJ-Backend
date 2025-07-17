@@ -1,6 +1,9 @@
 package gincontext
 
 import (
+	"FeasOJ/internal/global"
+	"FeasOJ/internal/utils"
+	"FeasOJ/internal/utils/sql"
 	"bytes"
 	"fmt"
 	"io"
@@ -10,9 +13,6 @@ import (
 	"os"
 	"path"
 	"path/filepath"
-	"src/internal/global"
-	"src/internal/utils"
-	"src/internal/utils/sql"
 	"strconv"
 	"time"
 

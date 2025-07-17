@@ -1,11 +1,11 @@
 package judge
 
 import (
+	"FeasOJ/internal/config"
+	"FeasOJ/internal/global"
 	"fmt"
 	"log"
 	"net/http"
-	"src/internal/config"
-	"src/internal/global"
 
 	"github.com/hashicorp/consul/api"
 )

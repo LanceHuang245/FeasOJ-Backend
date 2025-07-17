@@ -1,17 +1,16 @@
 package scheduler
 
 import (
+	gincontext "FeasOJ/internal/gin"
+	"FeasOJ/internal/utils"
+	"FeasOJ/internal/utils/sql"
 	"fmt"
 	"log"
-	gincontext "src/internal/gin"
-	"src/internal/utils"
 	"time"
 
 	"github.com/go-co-op/gocron"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"golang.org/x/text/language"
-
-	"src/internal/utils/sql"
 )
 
 var sentNotifications = make(map[int]bool)

@@ -1,9 +1,10 @@
 package sql
 
 import (
+	"FeasOJ/internal/global"
 	"errors"
+
 	"gorm.io/gorm"
-	"src/internal/global"
 )
 
 // 获取Problem表中的所有数据
