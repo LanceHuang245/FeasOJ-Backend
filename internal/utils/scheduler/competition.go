@@ -1,9 +1,9 @@
 package scheduler
 
 import (
-	gincontext "FeasOJ/internal/gin"
 	"FeasOJ/internal/utils"
 	"FeasOJ/internal/utils/sql"
+	"FeasOJ/server/handler"
 	"fmt"
 	"log"
 	"time"
@@ -43,7 +43,7 @@ func ScheduleCompetitionStatus() {
 							// 发送竞赛开始的消息
 							for _, user := range usersInCompetition {
 								if user.ContestID == competition.ContestID {
-									if client, ok := gincontext.Clients[fmt.Sprint(user.Uid)]; ok {
+									if client, ok := handler.Clients[fmt.Sprint(user.Uid)]; ok {
 										// 获取用户语言
 										lang := client.Lang
 										tag := language.Make(lang)

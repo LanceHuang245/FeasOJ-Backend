@@ -1,9 +1,9 @@
 package judge
 
 import (
-	gincontext "FeasOJ/internal/gin"
 	"FeasOJ/internal/global"
 	"FeasOJ/internal/utils"
+	"FeasOJ/server/handler"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -73,7 +73,7 @@ func ConsumeJudgeResults() {
 					continue
 				}
 				// 发送 SSE 通知
-				if client, ok := gincontext.Clients[fmt.Sprint(result.UserID)]; ok {
+				if client, ok := handler.Clients[fmt.Sprint(result.UserID)]; ok {
 					lang := client.Lang
 					tag := language.Make(lang)
 					langBundle := utils.InitI18n()

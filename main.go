@@ -4,10 +4,10 @@ import (
 	"FeasOJ/internal/config"
 	"FeasOJ/internal/global"
 	"FeasOJ/internal/judge"
-	"FeasOJ/internal/router"
 	"FeasOJ/internal/utils"
 	"FeasOJ/internal/utils/scheduler"
 	"FeasOJ/internal/utils/sql"
+	"FeasOJ/server"
 	"bufio"
 	"log"
 	"net/http"
@@ -125,7 +125,7 @@ func main() {
 	// 启动服务器
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
-	router.LoadRouter(r)
+	server.LoadRouter(r)
 
 	// 挂载头像文件夹
 	r.StaticFS("/api/v1/avatar", http.Dir(global.AvatarsDir))

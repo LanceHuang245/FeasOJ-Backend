@@ -1,9 +1,9 @@
 package middlewares
 
 import (
-	gincontext "FeasOJ/internal/gin"
 	"FeasOJ/internal/utils"
 	"FeasOJ/internal/utils/sql"
+	"FeasOJ/server/handler"
 	"net/http"
 	"net/url"
 
@@ -17,7 +17,7 @@ func HeaderVerify() gin.HandlerFunc {
 		username, err := url.QueryUnescape(encodedUsername)
 		token := c.GetHeader("Authorization")
 		if err != nil {
-			c.JSON(http.StatusBadRequest, gin.H{"message": gincontext.GetMessage(c, "userNotFound")})
+			c.JSON(http.StatusBadRequest, gin.H{"message": handler.GetMessage(c, "userNotFound")})
 			c.Abort()
 			return
 		}
@@ -27,7 +27,7 @@ func HeaderVerify() gin.HandlerFunc {
 			User = username
 		}
 		if !utils.VerifyToken(User, token) {
-			c.JSON(http.StatusUnauthorized, gin.H{"message": gincontext.GetMessage(c, "unauthorized")})
+			c.JSON(http.StatusUnauthorized, gin.H{"message": handler.GetMessage(c, "unauthorized")})
 			c.Abort()
 			return
 		}

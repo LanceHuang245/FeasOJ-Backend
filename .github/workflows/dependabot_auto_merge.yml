@@ -1,0 +1,28 @@
+name: Dependabot auto-merge
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Fetch Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Auto approve and merge Dependabot's pull request
+        run: |
+          gh pr review --approve "${{github.event.pull_request.html_url}}"
+          gh pr merge --auto --squash "${{github.event.pull_request.html_url}}"
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
