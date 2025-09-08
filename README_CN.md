@@ -64,6 +64,7 @@ FeasOJ-Backend
 - **微服务配置**: RabbitMQ、Consul地址
 - **功能开关**: [ImageGuard](https://github.com/ClaretWheel1481/ImageGuard)、[Profanity Detector](https://github.com/ClaretWheel1481/ProfanityDetector)
 
+更多关于配置文件信息，请前往 [CONFIG README.md](/docs/CONFIG_README_EN.md) 查看
 
 ### 致谢
 - [Go](https://github.com/golang/go)
