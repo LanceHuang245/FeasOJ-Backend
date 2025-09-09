@@ -40,7 +40,7 @@ FeasOJ-Backend
 ```
 
 ### Environment
-- Golang 1.24.4
+- Golang 1.25.0
 - Redis
 - MySQL 8.0+
 - RabbitMQ
@@ -64,7 +64,7 @@ The program uses JSON configuration files to manage all configuration items. On 
 - **Microservice Configuration**: RabbitMQ, Consul addresses
 - **Feature Switches**: [ImageGuard](https://github.com/ClaretWheel1481/ImageGuard), [Profanity Detector](https://github.com/ClaretWheel1481/ProfanityDetector), etc.
 
-For detailed configuration instructions, please refer to [CONFIG_README.md](CONFIG_README.md)
+For detailed configuration instructions, please refer to [CONFIG README.md](/docs/CONFIG_README_EN.md)
 
 ### Acknowledgments
 - [Go](https://github.com/golang/go)
