@@ -5,6 +5,8 @@
     </a>
 </p>
 
+> 为统一项目管理与规范化，JudgeCore将迁移至[FeasOJ](https://github.com/LanceHuang245/FeasOJ)
+
 # FeasOJ-Backend
 ### 项目简介
 FeasOJ 是一个基于 Vue 和 Golang 的在线编程练习平台，支持多国语言、讨论区、竞赛等功能，旨在为用户提供一个方便、高效的学习和练习环境。

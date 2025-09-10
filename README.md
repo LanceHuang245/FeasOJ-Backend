@@ -5,6 +5,8 @@ English | [简体中文](README_CN.md)
     </a>
 </p>
 
+> For unified project management and standardization, Backend will be migrating to [FeasOJ](https://github.com/LanceHuang245/FeasOJ)
+
 # FeasOJ
 ### Project Description
 FeasOJ is an online programming practice platform based on Vue and Golang, supporting multi-languages, discussion forums, contests and other features, aiming to provide users with a convenient and efficient learning and practice environment.
